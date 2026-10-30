@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P&J PHUKET TRANSPORT | Premium Private Transfer in Phuket</title>
+<meta name="description" content="P&J Phuket Transport - Premium private airport & hotel transfers in Phuket. Car, SUV and VIP Van with professional drivers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  color-scheme:dark;
+  --gold:#d4a72c; --gold-l:#f5d77a;
+  --grad:linear-gradient(135deg,#f8e08e 0%,#d4a72c 45%,#a87c12 100%);
+  --bg:#07090f; --bg2:#0d1119; --card:#121826; --card2:#171f30;
+  --text:#c5ccd9; --muted:#9aa3b5; --line:rgba(255,255,255,.1); --radius:22px;
+  --font:'Poppins',sans-serif; --head:'Playfair Display',serif;
+}
+/* ฟอนต์ตามภาษา */
+html[lang="th"]{--font:'Prompt',sans-serif;--head:'Prompt',sans-serif}
+html[lang="ru"]{--font:'Montserrat',sans-serif;--head:'Playfair Display',serif}
+html[lang="zh"]{--font:'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif;--head:'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif}
+html[lang="ko"]{--font:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;--head:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif}
+html[lang="th"] *,html[lang="zh"] *,html[lang="ko"] *{letter-spacing:normal!important}
+html[lang="th"] h1,html[lang="th"] h2,html[lang="th"] h3{line-height:1.45}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.75;overflow-x:hidden;font-size:16px}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.container{width:92%;max-width:1240px;margin:auto}
+section{padding:110px 0;position:relative}
+h1,h2,h3,h4{color:#fff;line-height:1.25}
+p{color:var(--text)}
+
+/* ตัวหนังสือสีทอง + สำรองสำหรับเบราว์เซอร์เก่า */
+.gold-text{color:var(--gold-l);text-shadow:none!important}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .gold-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding:0 .03em}
+}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold-l);font-size:.8rem;font-weight:600;letter-spacing:3px;text-transform:uppercase}
+.eyebrow::before{content:'';width:30px;height:1px;background:var(--gold)}
+.head{text-align:center;max-width:720px;margin:0 auto 60px}
+.head h2{font-family:var(--head);font-size:clamp(2rem,4vw,3rem);margin:12px 0}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 30px;border-radius:50px;font-weight:600;font-size:.95rem;border:none;cursor:pointer;transition:.35s;font-family:inherit;text-align:center}
+.btn-gold{background:var(--grad);color:#1a1200}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(212,167,44,.45)}
+.btn-ghost{border:1px solid rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.08)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-l)}
+.btn-wa{background:#25D366;color:#fff}
+.btn-wa:hover{background:#1ebe5b;transform:translateY(-3px)}
+
+/* NAV */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:.4s;padding:18px 0}
+header.scrolled{background:rgba(7,9,15,.92);backdrop-filter:blur(14px);padding:10px 0;border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;flex:none}
+.logo-mark{width:46px;height:46px;border-radius:14px;background:var(--grad);display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:800;color:#1a1200}
+.logo-text b{display:block;color:#fff;font-size:1.05rem;letter-spacing:1px;line-height:1.1;font-family:'Poppins',sans-serif}
+.logo-text small{color:var(--gold-l);font-size:.66rem;letter-spacing:4px;font-family:'Poppins',sans-serif}
+.menu{display:flex;align-items:center;gap:28px;list-style:none;margin-left:auto}
+.menu a{color:#f1f3f7;font-size:.92rem;font-weight:500;position:relative;white-space:nowrap}
+.menu a:not(.btn)::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--grad);transition:.3s}
+.menu a:not(.btn):hover::after{width:100%}
+.menu .btn{padding:10px 22px;color:#1a1200}
+.nav-right{display:flex;align-items:center;gap:12px;flex:none}
+.burger{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;width:40px}
+
+/* LANGUAGE SWITCHER */
+.lang{position:relative}
+.lang-btn{display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:30px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;font-family:'Poppins',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:.3s}
+.lang-btn:hover{border-color:var(--gold)}
+.lang-btn .fa-globe{color:var(--gold-l)}
+.lang-btn .fa-chevron-down{font-size:.65rem;transition:.3s}
+.lang.open .fa-chevron-down{transform:rotate(180deg)}
+.lang-list{position:absolute;right:0;top:calc(100% + 10px);min-width:190px;list-style:none;background:#121826;border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:8px;box-shadow:0 20px 40px rgba(0,0,0,.6);opacity:0;visibility:hidden;transform:translateY(-8px);transition:.25s;z-index:150}
+.lang.open .lang-list{opacity:1;visibility:visible;transform:none}
+.lang-list button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;border:none;background:none;color:#f1f3f7;font-size:.95rem;border-radius:10px;cursor:pointer;font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.lang-list button:hover{background:rgba(212,167,44,.15)}
+.lang-list button.active{color:var(--gold-l);background:rgba(212,167,44,.1)}
+.lang-list small{color:var(--muted);font-size:.72rem;font-weight:600}
+
+/* HERO (ใช้รูปรถตู้ Luxury เบาะดำเพดานดาวเป็นพื้นหลัง) */
+.hero{min-height:100vh;display:flex;align-items:center;padding:140px 0 90px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('images/van-luxury.jpg') center/cover;animation:zoom 20s ease-in-out infinite alternate}
+@keyframes zoom{to{transform:scale(1.12)}}
+.hero::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(7,9,15,.97) 30%,rgba(7,9,15,.85) 60%,rgba(7,9,15,.7)),linear-gradient(0deg,var(--bg),transparent 30%)}
+.hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1.25fr 1fr;gap:60px;align-items:center}
+.hero h1{font-family:var(--head);font-size:clamp(2.3rem,5.2vw,4.2rem);margin:20px 0;text-shadow:0 4px 20px rgba(0,0,0,.6)}
+.hero .lead{font-size:1.08rem;max-width:580px;margin-bottom:35px;color:#e2e6ee;text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.hero-btns{display:flex;gap:15px;flex-wrap:wrap}
+.trust{display:flex;gap:26px;margin-top:45px;flex-wrap:wrap}
+.trust div{display:flex;align-items:center;gap:10px;font-size:.9rem;color:#f1f3f7}
+.trust i{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(212,167,44,.18);color:var(--gold-l)}
+
+/* QUICK QUOTE */
+.quote{background:rgba(18,24,38,.88);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:34px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.quote h3{font-family:var(--head);font-size:1.6rem}
+.quote>p{font-size:.9rem;margin:4px 0 22px}
+.vehicles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.vehicles input{display:none}
+.vehicles label{border:1px solid var(--line);border-radius:14px;padding:14px 6px;text-align:center;cursor:pointer;transition:.3s;background:rgba(255,255,255,.04)}
+.vehicles label i{font-size:1.4rem;color:var(--gold-l);display:block;margin-bottom:6px}
+.vehicles label b{display:block;color:#fff;font-size:.85rem;letter-spacing:1px}
+.vehicles label span{font-size:.8rem;color:var(--text)}
+.vehicles input:checked+label{border-color:var(--gold);background:rgba(212,167,44,.15);box-shadow:0 0 0 1px var(--gold) inset}
+.field{position:relative;margin-bottom:12px}
+.field i{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--gold)}
+.field input{width:100%;padding:14px 16px 14px 44px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;font-family:inherit;font-size:.95rem}
+.field input:focus{outline:none;border-color:var(--gold)}
+.quote .btn{width:100%;margin-top:8px}
+
+::placeholder{color:#8f98ab;opacity:1}
+select option{background:#121826;color:#fff}
+
+/* MARQUEE */
+.marquee{background:var(--grad);padding:16px 0;overflow:hidden;white-space:nowrap;position:relative;z-index:3}
+.marquee-track{display:inline-flex;animation:scroll 35s linear infinite}
+.marquee span{color:#1a1200;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.88rem;padding-left:28px;display:inline-flex;align-items:center;gap:28px;font-family:'Poppins',sans-serif}
+.marquee span::after{content:'✦'}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* SERVICES */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.service{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:38px 28px;transition:.4s}
+.service:hover{transform:translateY(-10px);border-color:rgba(212,167,44,.5)}
+.service .ic{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:rgba(212,167,44,.14);color:var(--gold-l);font-size:1.6rem;margin-bottom:22px}
+.service h3{font-size:1.15rem;margin-bottom:10px}
+.service p{font-size:.93rem}
+
+/* FLEET */
+#fleet{background:var(--bg2)}
+.fleet{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.car{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.4s;display:flex;flex-direction:column}
+.car:hover{transform:translateY(-10px);border-color:rgba(212,167,44,.5)}
+.car-media{position:relative;aspect-ratio:4/5;overflow:hidden;cursor:zoom-in;background:#000}
+.car-media .blur{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(25px) brightness(.45);transform:scale(1.3)}
+.car-media img{position:relative;width:100%;height:100%;object-fit:contain;transition:.6s}
+.car:hover .car-media img{transform:scale(1.04)}
+.tag{position:absolute;top:18px;left:18px;z-index:2;background:var(--grad);color:#1a1200;font-weight:700;font-size:.72rem;letter-spacing:2px;padding:6px 14px;border-radius:30px;font-family:'Poppins',sans-serif}
+.zoom{position:absolute;bottom:16px;right:16px;z-index:2;width:42px;height:42px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;display:grid;place-items:center}
+.car-body{padding:28px;display:flex;flex-direction:column;flex:1}
+.car-body h3{font-size:1.35rem;font-family:'Playfair Display',serif}
+.car-body .sub{color:var(--gold-l);font-size:.88rem;margin-bottom:18px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.chips>span{font-size:.82rem;padding:6px 12px;border-radius:30px;background:rgba(255,255,255,.07);border:1px solid var(--line);color:#f1f3f7}
+.chips i{color:var(--gold);margin-right:6px}
+.chips em{font-style:normal}
+.car-body ul{list-style:none;font-size:.93rem;margin-bottom:24px}
+.car-body li{padding:4px 0;display:flex;gap:10px;align-items:baseline}
+.car-body li i{color:var(--gold);font-size:.8rem}
+.car-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:20px;border-top:1px solid var(--line)}
+.car-foot small{display:block;font-size:.75rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.car-foot b{font-size:1.7rem;color:#fff;font-family:'Playfair Display',serif}
+.car-foot .btn{padding:11px 22px}
+
+/* PRICING */
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;align-items:stretch}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:46px 34px;text-align:center;transition:.4s;position:relative;display:flex;flex-direction:column}
+.plan:hover{transform:translateY(-8px)}
+.plan.hot{background:linear-gradient(var(--card2),var(--card2)) padding-box,var(--grad) border-box;border:2px solid transparent;box-shadow:0 20px 50px rgba(212,167,44,.18)}
+.ribbon{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--grad);color:#1a1200;font-size:.72rem;font-weight:700;letter-spacing:2px;padding:6px 18px;border-radius:30px;white-space:nowrap}
+.plan .ic{width:80px;height:80px;margin:0 auto 20px;border-radius:50%;display:grid;place-items:center;font-size:2rem;color:var(--gold-l);background:rgba(212,167,44,.12);border:1px solid rgba(212,167,44,.35)}
+.plan h3{letter-spacing:4px;font-size:1.3rem;font-family:'Poppins',sans-serif}
+.plan .pax{font-size:.9rem;margin-bottom:24px}
+.plan .amt{font-family:'Playfair Display',serif;font-size:3.6rem;font-weight:800;line-height:1.1}
+.plan .amt sup{font-size:1.4rem;vertical-align:top;margin-right:4px}
+.plan .from{font-size:.8rem;letter-spacing:1px;text-transform:uppercase;margin:10px 0 26px;color:var(--muted)}
+.plan ul{list-style:none;text-align:left;margin-bottom:30px}
+.plan li{padding:10px 0;border-bottom:1px dashed var(--line);font-size:.93rem;color:#e2e6ee}
+.plan li i{color:var(--gold);margin-right:10px}
+.plan .btn{width:100%;margin-top:auto}
+.note{text-align:center;margin-top:50px;font-size:.92rem}
+.note i{color:var(--gold)}
+
+/* STEPS */
+#how{background:var(--bg2)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;counter-reset:s}
+.step{text-align:center;padding:20px}
+.step .num{width:90px;height:90px;margin:0 auto 22px;border-radius:50%;border:1px dashed var(--gold);display:grid;place-items:center;position:relative}
+.step .num i{font-size:1.8rem;color:var(--gold-l)}
+.step .num::after{counter-increment:s;content:counter(s);position:absolute;top:-4px;right:-4px;width:30px;height:30px;border-radius:50%;background:var(--grad);color:#1a1200;font-weight:700;font-size:.85rem;display:grid;place-items:center}
+.step h3{margin-bottom:8px}
+
+/* BOOKING */
+.book-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:start}
+.book-info h2{font-family:var(--head);font-size:clamp(2rem,4vw,2.8rem);margin:12px 0 18px}
+.book-info ul{list-style:none;margin-top:28px}
+.book-info li{display:flex;gap:16px;margin-bottom:22px}
+.book-info li i{flex:none;width:46px;height:46px;border-radius:14px;background:rgba(212,167,44,.14);color:var(--gold-l);display:grid;place-items:center}
+.book-info li b{color:#fff;display:block}
+.form{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:40px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fg{display:flex;flex-direction:column;gap:7px}
+.fg.full{grid-column:1/-1}
+.fg label{font-size:.88rem;color:#f1f3f7;font-weight:500}
+.fg input,.fg select,.fg textarea{padding:13px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:var(--bg2);color:#fff;font-family:inherit;font-size:.95rem;transition:.3s;width:100%}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--gold)}
+.fg input::-webkit-calendar-picker-indicator{cursor:pointer;opacity:.9}
+.form .btn{width:100%;margin-top:24px;padding:16px}
+
+/* FAQ */
+#faq{background:var(--bg2)}
+.faq{max-width:820px;margin:auto}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:14px;transition:.3s}
+.faq details[open]{border-color:rgba(212,167,44,.5)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 26px;color:#fff;font-weight:500;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-size:1.6rem;color:var(--gold);transition:.3s;line-height:1;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 26px 22px;font-size:.95rem}
+
+/* CONTACT */
+.contacts{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.ct{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:44px 30px;text-align:center;transition:.4s}
+.ct:hover{transform:translateY(-10px)}
+.ct .ic{width:80px;height:80px;border-radius:24px;margin:0 auto 22px;display:grid;place-items:center;font-size:2rem;color:#fff}
+.ct.phone .ic{background:var(--grad);color:#1a1200}
+.ct.wa .ic{background:linear-gradient(135deg,#25D366,#128C7E)}
+.ct.fb .ic{background:linear-gradient(135deg,#1877F2,#0b4fb3)}
+.ct.phone:hover{border-color:var(--gold)}
+.ct.wa:hover{border-color:#25D366}
+.ct.fb:hover{border-color:#1877F2}
+.ct h3{margin-bottom:6px}
+.ct p{margin-bottom:24px}
+.ct .btn{padding:11px 26px}
+
+/* FOOTER */
+footer{background:#05070b;border-top:1px solid var(--line);padding:70px 0 30px}
+.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:50px}
+footer h4{margin-bottom:18px;font-size:1rem}
+footer ul{list-style:none}
+footer li{margin-bottom:10px;font-size:.92rem;color:var(--text)}
+footer li i{color:var(--gold);margin-right:8px;width:16px}
+footer li a:hover{color:var(--gold-l)}
+footer .desc{margin:18px 0;font-size:.92rem;max-width:360px}
+.social{display:flex;gap:12px}
+.social a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:grid;place-items:center;transition:.3s;color:#fff}
+.social a:hover{background:var(--grad);color:#1a1200;border-color:transparent}
+.copy{text-align:center;padding-top:28px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+
+/* FLOATING */
+.float{position:fixed;right:22px;bottom:22px;z-index:90;display:flex;flex-direction:column;gap:12px}
+.float a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;color:#fff;box-shadow:0 10px 25px rgba(0,0,0,.4);transition:.3s}
+.float a:hover{transform:scale(1.1)}
+.float .w{background:#25D366;animation:pulse 2s infinite}
+.float .p{background:var(--grad);color:#1a1200}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex;animation:fade .3s}
+.lb img{max-width:95vw;max-height:90vh;border-radius:14px}
+.lb .x{position:absolute;top:14px;right:26px;font-size:2.6rem;color:#fff;cursor:pointer}
+@keyframes fade{from{opacity:0}}
+
+/* REVEAL */
+.js .reveal{opacity:0;transform:translateY(40px);transition:opacity 1s,transform 1s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.show{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .burger{display:block}
+  .menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(7,9,15,.98);max-height:0;overflow:hidden;transition:.4s;margin:0}
+  .menu.open{max-height:520px;padding:10px 0 25px;border-bottom:1px solid var(--line)}
+  .menu li{padding:12px 0}
+  header{background:rgba(7,9,15,.92);backdrop-filter:blur(14px);padding:12px 0}
+  .hero .container,.book-wrap{grid-template-columns:1fr}
+  .hero::before{background:linear-gradient(rgba(7,9,15,.9),rgba(7,9,15,.93))}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .fleet,.prices{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  section{padding:80px 0}
+  .services,.fleet,.prices,.steps,.contacts,.f-grid,.grid2{grid-template-columns:1fr}
+  .form,.quote{padding:26px}
+  .trust{gap:16px}
+  .logo-text b{font-size:.92rem}
+  .logo-mark{width:40px;height:40px}
+  .lang-btn{padding:8px 11px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header id="header">
+  <div class="container">
+    <nav>
+      <a href="#home" class="logo">
+        <div class="logo-mark">P&amp;J</div>
+        <div class="logo-text"><b>P&amp;J PHUKET</b><small>TRANSPORT</small></div>
+      </a>
+      <ul class="menu" id="menu">
+        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#fleet" data-i18n="nav_fleet">Our Fleet</a></li>
+        <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+        <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="#booking" class="btn btn-gold" data-i18n="nav_book">Book Now</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang" id="lang">
+          <button class="lang-btn" id="langBtn" aria-label="Language">
+            <i class="fas fa-globe"></i><span id="langCur">EN</span><i class="fas fa-chevron-down"></i>
+          </button>
+          <ul class="lang-list" id="langList"></ul>
+        </div>
+        <button class="burger" id="burger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="hero_eyebrow">Premium Private Transfer</span>
+      <h1 data-i18n="hero_title">Your Private Ride<br>Across <span class="gold-text">Phuket</span></h1>
+      <p class="lead" data-i18n="hero_lead">Airport pick-up & drop-off, hotel transfers and day trips around Phuket, Krabi & Phang Nga in comfortable VIP vehicles with friendly, professional drivers.</p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn btn-gold"><i class="fas fa-calendar-check"></i> <span data-i18n="btn_book_ride">Book Your Ride</span></a>
+        <a href="#fleet" class="btn btn-ghost"><i class="fas fa-car"></i> <span data-i18n="btn_view_fleet">View Our Fleet</span></a>
+      </div>
+      <div class="trust">
+        <div><i class="fas fa-clock"></i><span data-i18n="trust_247">24/7 Service</span></div>
+        <div><i class="fas fa-tags"></i><span data-i18n="trust_fixed">Fixed Price</span></div>
+        <div><i class="fas fa-shield-alt"></i><span data-i18n="trust_lic">Licensed Drivers</span></div>
+      </div>
+    </div>
+
+    <form class="quote reveal" id="quickForm">
+      <h3 data-i18n="q_title">Instant Quote</h3>
+      <p data-i18n="q_desc">Choose your vehicle & get a price on WhatsApp in minutes.</p>
+      <div class="vehicles">
+        <input type="radio" name="qv" id="qCar" value="CAR">
+        <label for="qCar"><i class="fas fa-car-side"></i><b>CAR</b><span>฿600+</span></label>
+        <input type="radio" name="qv" id="qSuv" value="SUV">
+        <label for="qSuv"><i class="fas fa-truck-pickup"></i><b>SUV</b><span>฿700+</span></label>
+        <input type="radio" name="qv" id="qVan" value="VAN" checked>
+        <label for="qVan"><i class="fas fa-shuttle-van"></i><b>VAN</b><span>฿800+</span></label>
+      </div>
+      <div class="field"><i class="fas fa-map-marker-alt"></i><input type="text" id="qFrom" data-i18n-ph="q_from" placeholder="Pick-up (e.g. Phuket Airport)" required></div>
+      <div class="field"><i class="fas fa-flag-checkered"></i><input type="text" id="qTo" data-i18n-ph="q_to" placeholder="Drop-off (e.g. Patong Beach)" required></div>
+      <button type="submit" class="btn btn-wa"><i class="fab fa-whatsapp"></i> <span data-i18n="q_btn">Get My Price</span></button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Phuket Airport</span><span>Patong</span><span>Kata</span><span>Karon</span><span>Kamala</span><span>Rawai</span><span>Phuket Old Town</span><span>Krabi</span><span>Ao Nang</span><span>Khao Lak</span><span>Phang Nga</span>
+    <span>Phuket Airport</span><span>Patong</span><span>Kata</span><span>Karon</span><span>Kamala</span><span>Rawai</span><span>Phuket Old Town</span><span>Krabi</span><span>Ao Nang</span><span>Khao Lak</span><span>Phang Nga</span>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow" data-i18n="sv_eyebrow">Our Services</span>
+      <h2 data-i18n="sv_title">Travel Phuket <span class="gold-text">The Easy Way</span></h2>
+      <p data-i18n="sv_desc">From the moment you land until you fly home, we take care of every ride.</p>
+    </div>
+    <div class="services">
+      <div class="service reveal"><div class="ic"><i class="fas fa-plane-arrival"></i></div><h3 data-i18n="sv1_t">Airport Transfer</h3><p data-i18n="sv1_d">Meet & greet at Phuket International Airport, straight to your hotel.</p></div>
+      <div class="service reveal"><div class="ic"><i class="fas fa-hotel"></i></div><h3 data-i18n="sv2_t">Hotel Transfer</h3><p data-i18n="sv2_d">Hotel to hotel, beach to beach — anywhere around the island.</p></div>
+      <div class="service reveal"><div class="ic"><i class="fas fa-umbrella-beach"></i></div><h3 data-i18n="sv3_t">Day Trip</h3><p data-i18n="sv3_d">Hire a private car with driver to explore Phuket at your own pace.</p></div>
+      <div class="service reveal"><div class="ic"><i class="fas fa-route"></i></div><h3 data-i18n="sv4_t">Out of Town</h3><p data-i18n="sv4_d">Comfortable rides to Krabi, Khao Lak, Phang Nga and beyond.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLEET (ตำแหน่งรูปรถทั้ง 3 คัน) ================= -->
+<section id="fleet">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow" data-i18n="fl_eyebrow">Our Vehicles</span>
+      <h2 data-i18n="fl_title">Choose Your <span class="gold-text">Ride</span></h2>
+      <p data-i18n="fl_desc">Clean, air-conditioned and well-maintained vehicles for every group size.</p>
+    </div>
+    <div class="fleet">
+
+      <!-- คันที่ 1: Isuzu MU-X (ป้ายเขียว ณข 3883 ภูเก็ต) -->
+      <div class="car reveal">
+        <div class="car-media">
+          <div class="blur"></div>
+          <span class="tag">SUV</span>
+          <img src="images suv-mux.jpg" alt="Isuzu MU-X SUV">
+          <span class="zoom"><i class="fas fa-expand"></i></span>
+        </div>
+        <div class="car-body">
+          <h3>Isuzu MU-X</h3>
+          <p class="sub" data-i18n="c1_sub">Licensed Public Taxi · Green Plate</p>
+          <div class="chips">
+            <span><i class="fas fa-user"></i><em data-i18n="pax" data-n="1-6">1-6 Pax</em></span>
+            <span><i class="fas fa-suitcase"></i><em data-i18n="bags" data-n="3-4">3-4 Bags</em></span>
+            <span><i class="fas fa-snowflake"></i><em data-i18n="ac">A/C</em></span>
+          </div>
+          <ul>
+            <li><i class="fas fa-check"></i><span data-i18n="c1_f1">Spacious 7-seater SUV</span></li>
+            <li><i class="fas fa-check"></i><span data-i18n="c1_f2">Perfect for families & small groups</span></li>
+            <li><i class="fas fa-check"></i><span data-i18n="c1_f3">Smooth ride on hilly roads</span></li>
+          </ul>
+          <div class="car-foot">
+            <div><small data-i18n="from">Starting from</small><b>฿700</b></div>
+            <a href="#booking" class="btn btn-gold" onclick="selectCar('SUV')" data-i18n="book_now">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- คันที่ 2: Toyota Commuter VIP (เบาะสีทอง ทะเบียน 30-2512) -->
+      <div class="car reveal">
+        <div class="car-media">
+          <div class="blur"></div>
+          <span class="tag">VIP VAN</span>
+          <img src="images van-vip.jpg" alt="Toyota Commuter VIP Van">
+          <span class="zoom"><i class="fas fa-expand"></i></span>
+        </div>
+        <div class="car-body">
+          <h3>Toyota Commuter VIP</h3>
+          <p class="sub" data-i18n="c2_sub">Luxury Captain Seats</p>
+          <div class="chips">
+            <span><i class="fas fa-user"></i><em data-i18n="pax" data-n="1-9">1-9 Pax</em></span>
+            <span><i class="fas fa-suitcase"></i><em data-i18n="bags" data-n="6-8">6-8 Bags</em></span>
+            <span><i class="fas fa-snowflake"></i><em data-i18n="ac">A/C</em></span>
+          </div>
+          <ul>
+            <li><i class="fas fa-check"></i><span data-i18n="c2_f1">Gold VIP reclining leather seats</span></li>
+            <li><i class="fas fa-check"></i><span data-i18n="c2_f2">Wooden floor & luxury interior</span></li>
+            <li><i class="fas fa-check"></i><span data-i18n="c2_f3">Cup holders & privacy curtains</span></li>
+          </ul>
+          <div class="car-foot">
+            <div><small data-i18n="from">Starting from</small><b>฿800</b></div>
+            <a href="#booking" class="btn btn-gold" onclick="selectCar('VAN')" data-i18n="book_now">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- คันที่ 3: Toyota Commuter Luxury (เบาะดำ เพดานดาว ทะเบียน 36-0862) -->
+      <div class="car reveal">
+        <div class="car-media">
+          <div class="blur"></div>
+          <span class="tag">LUXURY VAN</span>
+          <img src="images van-luxury.jpg" alt="Toyota Commuter Luxury">
+          <span class="zoom"><i class="fas fa-expand"></i></span>
+        </div>
+        <div class="car-body">
+          <h3>Toyota Commuter</h3>
+          <p class="sub" data-i18n="c3_sub">Starlight Roof · LED Ambient Light</p>
+          <div class="chips">
+            <span><i class="fas fa-user"></i><em data-i18n="pax" data-n="1-10">1-10 Pax</em></span>
+            <span><i class="fas fa-suitcase"></i><em data-i18n="bags" data-n="8-10">8-10 Bags</em></span>
+            <span><i class="fas fa-snowflake"></i><em data-i18n="ac">A/C</em></span>
+          </div>
+          <ul>
+            <li><i class="fas fa-check"></i><span data-i18n="c3_f1">Premium black leather seats</span></li>
+            <li><i class="fas fa-check"></i><span data-i18n="c3_f2">Starlight ceiling & LED lighting</span></li>
+            <li><i class="fas fa-check"></i><span data-i18n="c3_f3">Great for groups & nights out</span></li>
+          </ul>
+          <div class="car-foot">
+            <div><small data-i18n="from">Starting from</small><b>฿800</b></div>
+            <a href="#booking" class="btn btn-gold" onclick="selectCar('VAN')" data-i18n="book_now">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow" data-i18n="pr_eyebrow">Transfer Rates</span>
+      <h2 data-i18n="pr_title">Drop-off & Pick-up <span class="gold-text">Starting Price</span></h2>
+      <p data-i18n="pr_desc">Simple, transparent pricing. No hidden fees.</p>
+    </div>
+    <div class="prices">
+      <div class="plan reveal">
+        <div class="ic"><i class="fas fa-car-side"></i></div>
+        <h3>CAR</h3>
+        <p class="pax" data-i18n="passengers" data-n="1-3">1-3 Passengers</p>
+        <div class="amt gold-text"><sup>฿</sup>600</div>
+        <p class="from" data-i18n="pr_from">Starting price · one way</p>
+        <ul>
+          <li><i class="fas fa-check"></i><span data-i18n="p_sedan">Sedan with A/C</span></li>
+          <li><i class="fas fa-check"></i><span data-i18n="luggage" data-n="2-3">2-3 Luggage</span></li>
+          <li><i class="fas fa-check"></i><span data-i18n="p_door">Door-to-door service</span></li>
+        </ul>
+        <a href="#booking" class="btn btn-ghost" onclick="selectCar('CAR')" data-i18n="book_x" data-n="CAR">Book CAR</a>
+      </div>
+      <div class="plan reveal">
+        <div class="ic"><i class="fas fa-truck-pickup"></i></div>
+        <h3>SUV</h3>
+        <p class="pax" data-i18n="passengers" data-n="1-6">1-6 Passengers</p>
+        <div class="amt gold-text"><sup>฿</sup>700</div>
+        <p class="from" data-i18n="pr_from">Starting price · one way</p>
+        <ul>
+          <li><i class="fas fa-check"></i><span data-i18n="p_suv">7-seater SUV</span></li>
+          <li><i class="fas fa-check"></i><span data-i18n="luggage" data-n="3-4">3-4 Luggage</span></li>
+          <li><i class="fas fa-check"></i><span data-i18n="p_door">Door-to-door service</span></li>
+        </ul>
+        <a href="#booking" class="btn btn-ghost" onclick="selectCar('SUV')" data-i18n="book_x" data-n="SUV">Book SUV</a>
+      </div>
+      <div class="plan hot reveal">
+        <span class="ribbon" data-i18n="popular">MOST POPULAR</span>
+        <div class="ic"><i class="fas fa-shuttle-van"></i></div>
+        <h3>VAN</h3>
+        <p class="pax" data-i18n="passengers" data-n="1-10">1-10 Passengers</p>
+        <div class="amt gold-text"><sup>฿</sup>800</div>
+        <p class="from" data-i18n="pr_from">Starting price · one way</p>
+        <ul>
+          <li><i class="fas fa-check"></i><span data-i18n="p_van">VIP / Luxury Van</span></li>
+          <li><i class="fas fa-check"></i><span data-i18n="luggage" data-n="8-10">8-10 Luggage</span></li>
+          <li><i class="fas fa-check"></i><span data-i18n="p_door">Door-to-door service</span></li>
+        </ul>
+        <a href="#booking" class="btn btn-gold" onclick="selectCar('VAN')" data-i18n="book_x" data-n="VAN">Book VAN</a>
+      </div>
+    </div>
+    <p class="note reveal"><i class="fas fa-info-circle"></i> <span data-i18n="pr_note">Prices shown are starting rates. Final price depends on pick-up & drop-off location. Contact us for an exact quote.</span></p>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section id="how">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow" data-i18n="how_eyebrow">How It Works</span>
+      <h2 data-i18n="how_title">Book in <span class="gold-text">3 Easy Steps</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num"><i class="fas fa-mobile-alt"></i></div><h3 data-i18n="st1_t">Send Request</h3><p data-i18n="st1_d">Fill in the form or message us on WhatsApp with your trip details.</p></div>
+      <div class="step reveal"><div class="num"><i class="fas fa-check-double"></i></div><h3 data-i18n="st2_t">Get Confirmed</h3><p data-i18n="st2_d">We reply with your fixed price and booking confirmation.</p></div>
+      <div class="step reveal"><div class="num"><i class="fas fa-smile"></i></div><h3 data-i18n="st3_t">Enjoy The Ride</h3><p data-i18n="st3_d">Your driver meets you on time. Sit back and relax.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOKING ================= -->
+<section id="booking">
+  <div class="container book-wrap">
+    <div class="book-info reveal">
+      <span class="eyebrow" data-i18n="bk_eyebrow">Quick Booking</span>
+      <h2 data-i18n="bk_title">Reserve Your <span class="gold-text">Transfer</span></h2>
+      <p data-i18n="bk_desc">Send your booking straight to our WhatsApp. We will confirm as soon as possible.</p>
+      <ul>
+        <li><i class="fas fa-bolt"></i><div><b data-i18n="bk1_t">Fast Reply</b><span data-i18n="bk1_d">Quick confirmation via WhatsApp</span></div></li>
+        <li><i class="fas fa-hand-holding-usd"></i><div><b data-i18n="bk2_t">No Hidden Fees</b><span data-i18n="bk2_d">Price confirmed before your trip</span></div></li>
+        <li><i class="fas fa-user-tie"></i><div><b data-i18n="bk3_t">Professional Drivers</b><span data-i18n="bk3_d">Friendly, experienced local drivers</span></div></li>
+      </ul>
+    </div>
+    <form class="form reveal" id="bookingForm">
+      <div class="grid2">
+        <div class="fg"><label for="name" data-i18n="f_name">Your Name *</label><input type="text" id="name" required data-i18n-ph="ph_name" placeholder="John Smith"></div>
+        <div class="fg"><label for="vehicle" data-i18n="f_vehicle">Vehicle *</label>
+          <select id="vehicle">
+            <option value="CAR">CAR · ฿600+</option>
+            <option value="SUV">SUV · ฿700+</option>
+            <option value="VAN" selected>VAN · ฿800+</option>
+          </select></div>
+        <div class="fg"><label for="service" data-i18n="f_service">Service *</label>
+          <select id="service">
+            <option value="Airport Pick-up (Arrival)" data-i18n="o1">Airport Pick-up (Arrival)</option>
+            <option value="Airport Drop-off (Departure)" data-i18n="o2">Airport Drop-off (Departure)</option>
+            <option value="Hotel to Hotel" data-i18n="o3">Hotel to Hotel</option>
+            <option value="Day Trip / Hourly" data-i18n="o4">Day Trip / Hourly</option>
+            <option value="Out of Town" data-i18n="o5">Out of Town</option>
+          </select></div>
+        <div class="fg"><label for="pax" data-i18n="f_pax">Passengers *</label><input type="number" id="pax" min="1" max="10" value="2" required></div>
+        <div class="fg"><label for="from" data-i18n="f_from">Pick-up Location *</label><input type="text" id="from" required data-i18n-ph="ph_from" placeholder="Phuket Airport"></div>
+        <div class="fg"><label for="to" data-i18n="f_to">Drop-off Location *</label><input type="text" id="to" required data-i18n-ph="ph_to" placeholder="Patong Beach Hotel"></div>
+        <div class="fg"><label for="date" data-i18n="f_date">Date *</label><input type="date" id="date" required></div>
+        <div class="fg"><label for="time" data-i18n="f_time">Time *</label><input type="time" id="time" required></div>
+        <div class="fg full"><label for="note" data-i18n="f_note">Flight No. / Note</label><textarea id="note" rows="3" data-i18n-ph="ph_note" placeholder="e.g. TG201, baby seat needed"></textarea></div>
+      </div>
+      <button type="submit" class="btn btn-wa"><i class="fab fa-whatsapp"></i> <span data-i18n="f_btn">Send Booking via WhatsApp</span></button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow" data-i18n="faq_eyebrow">FAQ</span>
+      <h2 data-i18n="faq_title">Frequently Asked <span class="gold-text">Questions</span></h2>
+    </div>
+    <div class="faq reveal">
+      <details open><summary data-i18n="q1">How do I book a transfer?</summary><p data-i18n="a1">Fill in the booking form on this page or message us directly on WhatsApp. We will reply with your price and confirmation.</p></details>
+      <details><summary data-i18n="q2">Are the prices fixed?</summary><p data-i18n="a2">The prices shown are starting rates. Your final price depends on your pick-up and drop-off location and is confirmed before the trip — no hidden fees.</p></details>
+      <details><summary data-i18n="q3">What if my flight is delayed?</summary><p data-i18n="a3">Please send us your flight number when booking so our driver can adjust the pick-up time.</p></details>
+      <details><summary data-i18n="q4">How do I pay?</summary><p data-i18n="a4">You can pay in cash (Thai Baht) to the driver or by bank transfer. Please ask us for other payment options.</p></details>
+      <details><summary data-i18n="q5">Can I request a child seat?</summary><p data-i18n="a5">Yes, please let us know when booking. Subject to availability.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <div class="head reveal">
+      <span class="eyebrow" data-i18n="ct_eyebrow">Get In Touch</span>
+      <h2 data-i18n="ct_title">Contact <span class="gold-text">Us</span></h2>
+      <p data-i18n="ct_desc">Available 24/7. Choose your favourite way to reach us.</p>
+    </div>
+    <div class="contacts">
+      <div class="ct phone reveal"><div class="ic"><i class="fas fa-phone-alt"></i></div><h3 data-i18n="ct1_t">Call Us</h3><p class="phone-text"></p><a href="#" class="btn btn-gold link-phone" data-i18n="ct1_b">Call Now</a></div>
+      <div class="ct wa reveal"><div class="ic"><i class="fab fa-whatsapp"></i></div><h3>WhatsApp</h3><p data-i18n="ct2_d">Fast reply 24/7</p><a href="#" target="_blank" class="btn btn-wa link-wa" data-i18n="ct2_b">Chat Now</a></div>
+      <div class="ct fb reveal"><div class="ic"><i class="fab fa-facebook-f"></i></div><h3>Facebook</h3><p data-i18n="ct3_d">Follow & message us</p><a href="#" target="_blank" class="btn btn-ghost link-fb" data-i18n="ct3_b">Visit Page</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <a href="#home" class="logo"><div class="logo-mark">P&amp;J</div><div class="logo-text"><b>P&amp;J PHUKET</b><small>TRANSPORT</small></div></a>
+        <p class="desc" data-i18n="ft_desc">Premium private transfer service in Phuket, Thailand. Safe, comfortable and always on time.</p>
+        <div class="social">
+          <a href="#" target="_blank" class="link-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank" class="link-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="link-phone" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="ft_links">Quick Links</h4>
+        <ul>
+          <li><a href="#fleet" data-i18n="nav_fleet">Our Fleet</a></li>
+          <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+          <li><a href="#booking" data-i18n="nav_book">Book Now</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft_contact">Contact</h4>
+        <ul>
+          <li><i class="fas fa-phone-alt"></i><a href="#" class="link-phone phone-text"></a></li>
+          <li><i class="fab fa-whatsapp"></i><a href="#" target="_blank" class="link-wa">WhatsApp</a></li>
+          <li><i class="fas fa-map-marker-alt"></i><span data-i18n="ft_loc">Phuket, Thailand</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year"></span> P&amp;J Phuket Transport. <span data-i18n="ft_rights">All rights reserved.</span></p>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float">
+  <a href="#" target="_blank" class="w link-wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="#" class="p link-phone" title="Call"><i class="fas fa-phone-alt"></i></a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb"><span class="x">&times;</span><img id="lbImg" src="" alt=""></div>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* ========== แก้ไขข้อมูลติดต่อตรงนี้ที่เดียว ========== */
+const CONFIG = {
+  phone:        "0958414123",        // เบอร์โทร (สำหรับลิงก์ tel:)
+  phoneDisplay: "095-841-4123",      // เบอร์ที่แสดงบนเว็บ
+  whatsapp:     "66958414123",       // WhatsApp: 66 + เบอร์ (ตัด 0 ข้างหน้า)
+  facebook:     "https://www.facebook.com/phul.sakdi.cng.citr"
+};
+/* ================================================== */
+
+/* ========== ภาษา (เพิ่ม/แก้คำแปลได้ที่นี่) ========== */
+const LANGS = { en:'English', th:'ไทย', zh:'中文', ru:'Русский', ko:'한국어' };
+
+const I18N = {
+  en:{ pax:'{n} Pax', bags:'{n} Bags', passengers:'{n} Passengers', luggage:'{n} Luggage', book_x:'Book {n}' },
+
+  th:{
+    nav_home:'หน้าแรก', nav_fleet:'รถของเรา', nav_pricing:'ราคา', nav_faq:'คำถามที่พบบ่อย', nav_contact:'ติดต่อเรา', nav_book:'จองเลย',
+    hero_eyebrow:'บริการรถรับส่งส่วนตัวระดับพรีเมียม',
+    hero_title:'เดินทางทั่ว<span class="gold-text">ภูเก็ต</span><br>ด้วยรถส่วนตัวของคุณ',
+    hero_lead:'รับ-ส่งสนามบิน รับส่งโรงแรม และทริปเที่ยวรายวันทั่วภูเก็ต กระบี่ และพังงา ด้วยรถ VIP นั่งสบาย พร้อมคนขับมืออาชีพที่เป็นกันเอง',
+    btn_book_ride:'จองรถเลย', btn_view_fleet:'ดูรถของเรา',
+    trust_247:'บริการ 24 ชม.', trust_fixed:'ราคาคงที่', trust_lic:'คนขับมีใบอนุญาต',
+    q_title:'ขอราคาด่วน', q_desc:'เลือกรถแล้วรับราคาทาง WhatsApp ภายในไม่กี่นาที', q_from:'จุดรับ (เช่น สนามบินภูเก็ต)', q_to:'จุดส่ง (เช่น หาดป่าตอง)', q_btn:'ขอราคา',
+    sv_eyebrow:'บริการของเรา', sv_title:'เที่ยวภูเก็ต<span class="gold-text">แบบสบายๆ</span>', sv_desc:'ตั้งแต่ลงเครื่องจนถึงวันเดินทางกลับ เราดูแลทุกการเดินทางของคุณ',
+    sv1_t:'รับส่งสนามบิน', sv1_d:'รอรับที่สนามบินนานาชาติภูเก็ต แล้วส่งตรงถึงโรงแรม',
+    sv2_t:'รับส่งโรงแรม', sv2_d:'โรงแรมถึงโรงแรม หาดถึงหาด ไปได้ทุกที่บนเกาะ',
+    sv3_t:'ทริปรายวัน', sv3_d:'เหมารถพร้อมคนขับ เที่ยวภูเก็ตได้ตามใจคุณ',
+    sv4_t:'เดินทางต่างจังหวัด', sv4_d:'เดินทางสบายไปกระบี่ เขาหลัก พังงา และที่อื่นๆ',
+    fl_eyebrow:'รถของเรา', fl_title:'เลือก<span class="gold-text">รถของคุณ</span>', fl_desc:'รถสะอาด ติดแอร์ ดูแลอย่างดี เหมาะกับทุกขนาดกลุ่ม',
+    pax:'{n} คน', bags:'กระเป๋า {n} ใบ', ac:'แอร์',
+    c1_sub:'แท็กซี่ป้ายเขียว ถูกกฎหมาย', c1_f1:'SUV 7 ที่นั่ง กว้างขวาง', c1_f2:'เหมาะกับครอบครัวและกลุ่มเล็ก', c1_f3:'ขับนุ่มนวลแม้ทางขึ้นเขา',
+    c2_sub:'เบาะกัปตันสุดหรู', c2_f1:'เบาะหนัง VIP สีทอง ปรับเอนได้', c2_f2:'พื้นลายไม้ ตกแต่งภายในหรูหรา', c2_f3:'ที่วางแก้วและม่านส่วนตัว',
+    c3_sub:'เพดานดาว · ไฟ LED รอบคัน', c3_f1:'เบาะหนังสีดำพรีเมียม', c3_f2:'เพดานแสงดาวและไฟ LED', c3_f3:'เหมาะกับกลุ่มและเที่ยวกลางคืน',
+    from:'ราคาเริ่มต้น', book_now:'จองเลย',
+    pr_eyebrow:'ค่าบริการรับส่ง', pr_title:'ส่งออก - รับเข้า <span class="gold-text">ราคาเริ่มต้น</span>', pr_desc:'ราคาชัดเจน ไม่มีค่าใช้จ่ายแอบแฝง',
+    popular:'ยอดนิยม', passengers:'{n} คน', pr_from:'ราคาเริ่มต้น · เที่ยวเดียว', luggage:'กระเป๋า {n} ใบ',
+    p_sedan:'รถเก๋งติดแอร์', p_suv:'SUV 7 ที่นั่ง', p_van:'รถตู้ VIP / Luxury', p_door:'รับส่งถึงที่', book_x:'จอง {n}',
+    pr_note:'ราคาที่แสดงเป็นราคาเริ่มต้น ราคาจริงขึ้นอยู่กับจุดรับและจุดส่ง ติดต่อเราเพื่อสอบถามราคาที่แน่นอน',
+    how_eyebrow:'ขั้นตอนการจอง', how_title:'จองง่าย<span class="gold-text">ใน 3 ขั้นตอน</span>',
+    st1_t:'ส่งคำขอ', st1_d:'กรอกฟอร์มหรือส่งข้อความทาง WhatsApp พร้อมรายละเอียดการเดินทาง',
+    st2_t:'รับการยืนยัน', st2_d:'เราตอบกลับพร้อมราคาและยืนยันการจอง',
+    st3_t:'เดินทางสบาย', st3_d:'คนขับไปรับตรงเวลา นั่งพักผ่อนได้เลย',
+    bk_eyebrow:'จองด่วน', bk_title:'จอง<span class="gold-text">รถรับส่ง</span>', bk_desc:'ส่งรายละเอียดการจองตรงถึง WhatsApp ของเรา เราจะยืนยันโดยเร็วที่สุด',
+    bk1_t:'ตอบกลับไว', bk1_d:'ยืนยันการจองผ่าน WhatsApp', bk2_t:'ไม่มีค่าใช้จ่ายแอบแฝง', bk2_d:'แจ้งราคาก่อนเดินทาง', bk3_t:'คนขับมืออาชีพ', bk3_d:'คนขับท้องถิ่น เป็นกันเอง มีประสบการณ์',
+    f_name:'ชื่อของคุณ *', f_vehicle:'ประเภทรถ *', f_service:'บริการ *', f_pax:'จำนวนผู้โดยสาร *', f_from:'จุดรับ *', f_to:'จุดส่ง *', f_date:'วันที่ *', f_time:'เวลา *', f_note:'เที่ยวบิน / หมายเหตุ',
+    ph_name:'ชื่อ-นามสกุล', ph_from:'สนามบินภูเก็ต', ph_to:'โรงแรมที่หาดป่าตอง', ph_note:'เช่น TG201, ต้องการที่นั่งเด็ก',
+    o1:'รับที่สนามบิน (ขาเข้า)', o2:'ส่งสนามบิน (ขาออก)', o3:'โรงแรมถึงโรงแรม', o4:'ทริปรายวัน / รายชั่วโมง', o5:'เดินทางต่างจังหวัด',
+    f_btn:'ส่งการจองทาง WhatsApp',
+    faq_eyebrow:'FAQ', faq_title:'คำถาม<span class="gold-text">ที่พบบ่อย</span>',
+    q1:'จองรถรับส่งได้อย่างไร?', a1:'กรอกฟอร์มการจองในหน้านี้ หรือส่งข้อความหาเราทาง WhatsApp เราจะตอบกลับพร้อมราคาและยืนยันการจอง',
+    q2:'ราคาคงที่ไหม?', a2:'ราคาที่แสดงเป็นราคาเริ่มต้น ราคาจริงขึ้นอยู่กับจุดรับและจุดส่ง และจะแจ้งให้ทราบก่อนเดินทาง ไม่มีค่าใช้จ่ายแอบแฝง',
+    q3:'ถ้าเที่ยวบินล่าช้าทำอย่างไร?', a3:'กรุณาแจ้งหมายเลขเที่ยวบินตอนจอง คนขับจะปรับเวลารับให้',
+    q4:'ชำระเงินอย่างไร?', a4:'ชำระเป็นเงินสด (บาท) กับคนขับ หรือโอนผ่านธนาคาร สอบถามช่องทางอื่นได้',
+    q5:'ขอที่นั่งเด็กได้ไหม?', a5:'ได้ กรุณาแจ้งตอนจอง ขึ้นอยู่กับความพร้อมของอุปกรณ์',
+    ct_eyebrow:'ติดต่อเรา', ct_title:'ติดต่อ<span class="gold-text">เรา</span>', ct_desc:'ให้บริการ 24 ชั่วโมง เลือกช่องทางที่สะดวก',
+    ct1_t:'โทรหาเรา', ct1_b:'โทรเลย', ct2_d:'ตอบไว 24 ชม.', ct2_b:'แชทเลย', ct3_d:'ติดตามและส่งข้อความหาเรา', ct3_b:'ไปที่เพจ',
+    ft_desc:'บริการรถรับส่งส่วนตัวระดับพรีเมียมในภูเก็ต ปลอดภัย สะดวกสบาย และตรงเวลา', ft_links:'เมนู', ft_contact:'ติดต่อ', ft_loc:'ภูเก็ต ประเทศไทย', ft_rights:'สงวนลิขสิทธิ์'
+  },
+
+  zh:{
+    nav_home:'首页', nav_fleet:'车型', nav_pricing:'价格', nav_faq:'常见问题', nav_contact:'联系我们', nav_book:'立即预订',
+    hero_eyebrow:'高端私人接送服务',
+    hero_title:'畅游<span class="gold-text">普吉岛</span><br>专属私人用车',
+    hero_lead:'提供机场接送机、酒店接送及普吉、甲米、攀牙一日游包车服务。舒适VIP车辆，友好专业的司机。',
+    btn_book_ride:'立即预订用车', btn_view_fleet:'查看车型',
+    trust_247:'24小时服务', trust_fixed:'固定价格', trust_lic:'持证司机',
+    q_title:'快速询价', q_desc:'选择车型，几分钟内通过 WhatsApp 获取报价。', q_from:'上车地点（如：普吉机场）', q_to:'下车地点（如：芭东海滩）', q_btn:'获取报价',
+    sv_eyebrow:'我们的服务', sv_title:'轻松畅游<span class="gold-text">普吉岛</span>', sv_desc:'从您落地到返程，每一段行程我们都为您安排妥当。',
+    sv1_t:'机场接送', sv1_d:'普吉国际机场举牌接机，直达酒店。',
+    sv2_t:'酒店接送', sv2_d:'酒店到酒店、海滩到海滩，全岛任意地点。',
+    sv3_t:'一日游包车', sv3_d:'包车配司机，按自己的节奏游览普吉。',
+    sv4_t:'跨城接送', sv4_d:'舒适前往甲米、考拉、攀牙等地。',
+    fl_eyebrow:'我们的车辆', fl_title:'选择您的<span class="gold-text">座驾</span>', fl_desc:'车辆干净、配备空调、保养良好，适合各种人数。',
+    pax:'{n}人', bags:'{n}件行李', ac:'空调',
+    c1_sub:'正规营运出租车 · 绿牌', c1_f1:'宽敞7座SUV', c1_f2:'适合家庭及小团体', c1_f3:'山路行驶平稳舒适',
+    c2_sub:'豪华航空座椅', c2_f1:'金色VIP可躺真皮座椅', c2_f2:'木纹地板，豪华内饰', c2_f3:'杯架及私密窗帘',
+    c3_sub:'星空顶 · LED氛围灯', c3_f1:'高级黑色真皮座椅', c3_f2:'星空车顶与LED灯光', c3_f3:'适合团体及夜间出行',
+    from:'起价', book_now:'立即预订',
+    pr_eyebrow:'接送价格', pr_title:'送机 & 接机 <span class="gold-text">起步价</span>', pr_desc:'价格简单透明，无隐藏费用。',
+    popular:'最受欢迎', passengers:'{n}位乘客', pr_from:'起步价 · 单程', luggage:'{n}件行李',
+    p_sedan:'空调轿车', p_suv:'7座SUV', p_van:'VIP / 豪华商务车', p_door:'门到门服务', book_x:'预订 {n}',
+    pr_note:'以上为起步价，最终价格取决于上下车地点。请联系我们获取准确报价。',
+    how_eyebrow:'预订流程', how_title:'<span class="gold-text">3步</span>轻松预订',
+    st1_t:'发送需求', st1_d:'填写表单或通过 WhatsApp 发送行程信息。',
+    st2_t:'确认订单', st2_d:'我们会回复固定价格并确认预订。',
+    st3_t:'享受旅程', st3_d:'司机准时接您，安心享受旅途。',
+    bk_eyebrow:'快速预订', bk_title:'预订<span class="gold-text">接送服务</span>', bk_desc:'预订信息将直接发送到我们的 WhatsApp，我们会尽快确认。',
+    bk1_t:'快速回复', bk1_d:'通过 WhatsApp 快速确认', bk2_t:'无隐藏费用', bk2_d:'出行前确认价格', bk3_t:'专业司机', bk3_d:'友好、经验丰富的本地司机',
+    f_name:'您的姓名 *', f_vehicle:'车型 *', f_service:'服务 *', f_pax:'乘客人数 *', f_from:'上车地点 *', f_to:'下车地点 *', f_date:'日期 *', f_time:'时间 *', f_note:'航班号 / 备注',
+    ph_name:'您的姓名', ph_from:'普吉机场', ph_to:'芭东海滩酒店', ph_note:'如：TG201，需要儿童座椅',
+    o1:'机场接机（抵达）', o2:'机场送机（出发）', o3:'酒店到酒店', o4:'一日游 / 按小时包车', o5:'跨城接送',
+    f_btn:'通过 WhatsApp 发送预订',
+    faq_eyebrow:'常见问题', faq_title:'常见<span class="gold-text">问题</span>',
+    q1:'如何预订接送？', a1:'填写本页预订表单，或直接通过 WhatsApp 联系我们，我们会回复报价并确认预订。',
+    q2:'价格是固定的吗？', a2:'页面显示为起步价，最终价格取决于上下车地点，并会在出行前确认，无隐藏费用。',
+    q3:'航班延误怎么办？', a3:'预订时请提供航班号，司机会相应调整接机时间。',
+    q4:'如何付款？', a4:'可以用现金（泰铢）付给司机，或银行转账。其他付款方式请咨询我们。',
+    q5:'可以提供儿童座椅吗？', a5:'可以，请在预订时告知，视供应情况而定。',
+    ct_eyebrow:'联系我们', ct_title:'联系<span class="gold-text">我们</span>', ct_desc:'24小时服务，选择您方便的联系方式。',
+    ct1_t:'电话联系', ct1_b:'立即拨打', ct2_d:'24小时快速回复', ct2_b:'立即聊天', ct3_d:'关注并私信我们', ct3_b:'访问主页',
+    ft_desc:'普吉岛高端私人接送服务。安全、舒适、准时。', ft_links:'快速链接', ft_contact:'联系方式', ft_loc:'泰国 普吉岛', ft_rights:'版权所有。'
+  },
+
+  ru:{
+    nav_home:'Главная', nav_fleet:'Автопарк', nav_pricing:'Цены', nav_faq:'Вопросы', nav_contact:'Контакты', nav_book:'Забронировать',
+    hero_eyebrow:'Премиум индивидуальный трансфер',
+    hero_title:'Ваш личный трансфер<br>по <span class="gold-text">Пхукету</span>',
+    hero_lead:'Встреча и проводы в аэропорту, трансферы между отелями и поездки по Пхукету, Краби и Пханг Нга на комфортных VIP-автомобилях с вежливыми профессиональными водителями.',
+    btn_book_ride:'Заказать трансфер', btn_view_fleet:'Наш автопарк',
+    trust_247:'Круглосуточно', trust_fixed:'Фиксированная цена', trust_lic:'Лицензированные водители',
+    q_title:'Быстрый расчёт', q_desc:'Выберите автомобиль и получите цену в WhatsApp за несколько минут.', q_from:'Откуда (напр. аэропорт Пхукета)', q_to:'Куда (напр. пляж Патонг)', q_btn:'Узнать цену',
+    sv_eyebrow:'Наши услуги', sv_title:'Путешествуйте по Пхукету <span class="gold-text">с комфортом</span>', sv_desc:'С момента прилёта и до вылета домой — мы позаботимся о каждой поездке.',
+    sv1_t:'Трансфер из аэропорта', sv1_d:'Встреча в международном аэропорту Пхукета и доставка прямо в отель.',
+    sv2_t:'Трансфер между отелями', sv2_d:'Из отеля в отель, с пляжа на пляж — в любую точку острова.',
+    sv3_t:'Аренда на день', sv3_d:'Автомобиль с водителем, чтобы исследовать Пхукет в своём темпе.',
+    sv4_t:'Междугородние поездки', sv4_d:'Комфортные поездки в Краби, Кхао Лак, Пханг Нга и дальше.',
+    fl_eyebrow:'Наши автомобили', fl_title:'Выберите <span class="gold-text">автомобиль</span>', fl_desc:'Чистые автомобили с кондиционером в отличном состоянии для групп любого размера.',
+    pax:'{n} чел.', bags:'Багаж: {n}', ac:'Кондиционер',
+    c1_sub:'Лицензированное такси · зелёный номер', c1_f1:'Просторный 7-местный внедорожник', c1_f2:'Идеально для семей и небольших групп', c1_f3:'Плавная езда по горным дорогам',
+    c2_sub:'Роскошные капитанские кресла', c2_f1:'Золотые кожаные VIP-кресла с откидной спинкой', c2_f2:'Деревянный пол и роскошный салон', c2_f3:'Подстаканники и шторки',
+    c3_sub:'Звёздное небо · LED-подсветка', c3_f1:'Премиальные чёрные кожаные сиденья', c3_f2:'Потолок «звёздное небо» и LED-подсветка', c3_f3:'Отлично для групп и вечерних поездок',
+    from:'Цена от', book_now:'Забронировать',
+    pr_eyebrow:'Тарифы на трансфер', pr_title:'Проводы и встреча — <span class="gold-text">цены от</span>', pr_desc:'Простые и прозрачные цены. Без скрытых платежей.',
+    popular:'САМЫЙ ПОПУЛЯРНЫЙ', passengers:'Пассажиры: {n}', pr_from:'Начальная цена · в одну сторону', luggage:'Багаж: {n} шт.',
+    p_sedan:'Седан с кондиционером', p_suv:'7-местный внедорожник', p_van:'VIP / Люкс минивэн', p_door:'От двери до двери', book_x:'Заказать {n}',
+    pr_note:'Указаны начальные цены. Итоговая стоимость зависит от места посадки и высадки. Свяжитесь с нами для точного расчёта.',
+    how_eyebrow:'Как это работает', how_title:'Бронирование в <span class="gold-text">3 простых шага</span>',
+    st1_t:'Отправьте заявку', st1_d:'Заполните форму или напишите нам в WhatsApp с деталями поездки.',
+    st2_t:'Получите подтверждение', st2_d:'Мы ответим с фиксированной ценой и подтверждением брони.',
+    st3_t:'Наслаждайтесь поездкой', st3_d:'Водитель встретит вас вовремя. Расслабьтесь и отдыхайте.',
+    bk_eyebrow:'Быстрое бронирование', bk_title:'Забронируйте <span class="gold-text">трансфер</span>', bk_desc:'Отправьте заявку прямо в наш WhatsApp. Мы подтвердим как можно скорее.',
+    bk1_t:'Быстрый ответ', bk1_d:'Подтверждение через WhatsApp', bk2_t:'Без скрытых платежей', bk2_d:'Цена согласуется до поездки', bk3_t:'Профессиональные водители', bk3_d:'Вежливые и опытные местные водители',
+    f_name:'Ваше имя *', f_vehicle:'Автомобиль *', f_service:'Услуга *', f_pax:'Пассажиры *', f_from:'Место посадки *', f_to:'Место назначения *', f_date:'Дата *', f_time:'Время *', f_note:'Номер рейса / Примечание',
+    ph_name:'Иван Иванов', ph_from:'Аэропорт Пхукета', ph_to:'Отель на пляже Патонг', ph_note:'напр. TG201, нужно детское кресло',
+    o1:'Встреча в аэропорту (прилёт)', o2:'Проводы в аэропорт (вылет)', o3:'Из отеля в отель', o4:'На день / почасово', o5:'Междугородний трансфер',
+    f_btn:'Отправить заявку в WhatsApp',
+    faq_eyebrow:'Вопросы', faq_title:'Частые <span class="gold-text">вопросы</span>',
+    q1:'Как заказать трансфер?', a1:'Заполните форму бронирования на этой странице или напишите нам в WhatsApp. Мы ответим с ценой и подтверждением.',
+    q2:'Цены фиксированные?', a2:'Указаны начальные цены. Итоговая стоимость зависит от мест посадки и высадки и согласуется до поездки — без скрытых платежей.',
+    q3:'Что если мой рейс задерживается?', a3:'Укажите номер рейса при бронировании, и водитель скорректирует время встречи.',
+    q4:'Как оплатить?', a4:'Наличными (тайские баты) водителю или банковским переводом. Уточните у нас другие способы оплаты.',
+    q5:'Можно заказать детское кресло?', a5:'Да, сообщите об этом при бронировании. При наличии.',
+    ct_eyebrow:'Свяжитесь с нами', ct_title:'Наши <span class="gold-text">контакты</span>', ct_desc:'Работаем круглосуточно. Выберите удобный способ связи.',
+    ct1_t:'Телефон', ct1_b:'Позвонить', ct2_d:'Быстрый ответ 24/7', ct2_b:'Написать', ct3_d:'Подписывайтесь и пишите нам', ct3_b:'Открыть страницу',
+    ft_desc:'Премиум индивидуальный трансфер на Пхукете, Таиланд. Безопасно, комфортно и всегда вовремя.', ft_links:'Меню', ft_contact:'Контакты', ft_loc:'Пхукет, Таиланд', ft_rights:'Все права защищены.'
+  },
+
+  ko:{
+    nav_home:'홈', nav_fleet:'차량 안내', nav_pricing:'요금', nav_faq:'자주 묻는 질문', nav_contact:'문의하기', nav_book:'지금 예약',
+    hero_eyebrow:'프리미엄 프라이빗 픽업 서비스',
+    hero_title:'<span class="gold-text">푸켓</span> 어디든<br>나만의 전용 차량으로',
+    hero_lead:'공항 픽업·샌딩, 호텔 이동, 푸켓·끄라비·팡아 일일 투어까지. 편안한 VIP 차량과 친절한 전문 기사가 함께합니다.',
+    btn_book_ride:'지금 예약하기', btn_view_fleet:'차량 보기',
+    trust_247:'24시간 운영', trust_fixed:'정찰제 요금', trust_lic:'면허 보유 기사',
+    q_title:'빠른 견적', q_desc:'차량을 선택하고 WhatsApp으로 몇 분 안에 요금을 받아보세요.', q_from:'출발지 (예: 푸켓 공항)', q_to:'도착지 (예: 빠통 비치)', q_btn:'요금 받기',
+    sv_eyebrow:'서비스 안내', sv_title:'<span class="gold-text">편안하게</span> 즐기는 푸켓 여행', sv_desc:'도착하는 순간부터 귀국하는 날까지 모든 이동을 책임집니다.',
+    sv1_t:'공항 픽업·샌딩', sv1_d:'푸켓 국제공항에서 미팅 후 호텔까지 바로 모십니다.',
+    sv2_t:'호텔 간 이동', sv2_d:'호텔에서 호텔로, 해변에서 해변으로. 섬 어디든 갑니다.',
+    sv3_t:'일일 차량 대절', sv3_d:'기사 포함 차량으로 원하는 일정대로 푸켓을 여행하세요.',
+    sv4_t:'장거리 이동', sv4_d:'끄라비, 카오락, 팡아 등 다른 지역도 편안하게.',
+    fl_eyebrow:'보유 차량', fl_title:'원하는 <span class="gold-text">차량</span>을 선택하세요', fl_desc:'깨끗하고 에어컨이 완비된, 잘 관리된 차량을 인원에 맞게 준비했습니다.',
+    pax:'{n}명', bags:'수하물 {n}개', ac:'에어컨',
+    c1_sub:'정식 영업용 택시 · 녹색 번호판', c1_f1:'넓은 7인승 SUV', c1_f2:'가족 및 소규모 그룹에 적합', c1_f3:'산길에서도 부드러운 승차감',
+    c2_sub:'럭셔리 캡틴 시트', c2_f1:'골드 VIP 리클라이닝 가죽 시트', c2_f2:'원목 바닥과 고급 인테리어', c2_f3:'컵홀더 및 프라이버시 커튼',
+    c3_sub:'별빛 천장 · LED 무드등', c3_f1:'프리미엄 블랙 가죽 시트', c3_f2:'별빛 천장과 LED 조명', c3_f3:'단체 및 야간 이동에 최적',
+    from:'시작 요금', book_now:'예약하기',
+    pr_eyebrow:'픽업·샌딩 요금', pr_title:'샌딩 & 픽업 <span class="gold-text">시작 요금</span>', pr_desc:'간단하고 투명한 요금. 숨은 비용 없음.',
+    popular:'가장 인기', passengers:'승객 {n}명', pr_from:'시작 요금 · 편도', luggage:'수하물 {n}개',
+    p_sedan:'에어컨 세단', p_suv:'7인승 SUV', p_van:'VIP / 럭셔리 밴', p_door:'도어 투 도어 서비스', book_x:'{n} 예약',
+    pr_note:'표시된 요금은 시작 요금입니다. 최종 요금은 출발지와 도착지에 따라 달라집니다. 정확한 견적은 문의해 주세요.',
+    how_eyebrow:'예약 방법', how_title:'<span class="gold-text">3단계</span>로 간편 예약',
+    st1_t:'요청 보내기', st1_d:'양식을 작성하거나 WhatsApp으로 여행 정보를 보내주세요.',
+    st2_t:'예약 확정', st2_d:'확정 요금과 예약 확인을 답장으로 보내드립니다.',
+    st3_t:'편안한 이동', st3_d:'기사가 정시에 마중 나갑니다. 편히 쉬세요.',
+    bk_eyebrow:'빠른 예약', bk_title:'<span class="gold-text">차량</span> 예약하기', bk_desc:'예약 내용이 WhatsApp으로 바로 전송됩니다. 최대한 빨리 확인해 드립니다.',
+    bk1_t:'빠른 답변', bk1_d:'WhatsApp으로 신속하게 확인', bk2_t:'숨은 비용 없음', bk2_d:'출발 전 요금 확정', bk3_t:'전문 기사', bk3_d:'친절하고 경험 많은 현지 기사',
+    f_name:'이름 *', f_vehicle:'차량 *', f_service:'서비스 *', f_pax:'인원 *', f_from:'출발지 *', f_to:'도착지 *', f_date:'날짜 *', f_time:'시간 *', f_note:'항공편 / 요청사항',
+    ph_name:'홍길동', ph_from:'푸켓 공항', ph_to:'빠통 비치 호텔', ph_note:'예: TG201, 유아용 카시트 필요',
+    o1:'공항 픽업 (도착)', o2:'공항 샌딩 (출발)', o3:'호텔 간 이동', o4:'일일 / 시간제 대절', o5:'장거리 이동',
+    f_btn:'WhatsApp으로 예약 보내기',
+    faq_eyebrow:'FAQ', faq_title:'자주 묻는 <span class="gold-text">질문</span>',
+    q1:'어떻게 예약하나요?', a1:'이 페이지의 예약 양식을 작성하거나 WhatsApp으로 메시지를 보내주세요. 요금과 예약 확인을 답장으로 드립니다.',
+    q2:'요금은 정해져 있나요?', a2:'표시된 요금은 시작 요금이며, 최종 요금은 출발지와 도착지에 따라 달라집니다. 출발 전에 확정되며 숨은 비용은 없습니다.',
+    q3:'항공편이 지연되면 어떻게 하나요?', a3:'예약 시 항공편 번호를 알려주시면 기사가 픽업 시간을 조정합니다.',
+    q4:'결제는 어떻게 하나요?', a4:'기사에게 현금(태국 바트)으로 결제하거나 계좌이체가 가능합니다. 다른 결제 방법은 문의해 주세요.',
+    q5:'유아용 카시트를 요청할 수 있나요?', a5:'네, 예약 시 알려주세요. 재고 상황에 따라 제공됩니다.',
+    ct_eyebrow:'문의하기', ct_title:'<span class="gold-text">연락처</span>', ct_desc:'24시간 운영. 편한 방법으로 연락주세요.',
+    ct1_t:'전화 문의', ct1_b:'전화하기', ct2_d:'24시간 빠른 답변', ct2_b:'채팅하기', ct3_d:'팔로우 및 메시지', ct3_b:'페이지 방문',
+    ft_desc:'푸켓 프리미엄 프라이빗 픽업 서비스. 안전하고 편안하며 항상 정시에.', ft_links:'바로가기', ft_contact:'연락처', ft_loc:'태국 푸켓', ft_rights:'All rights reserved.'
+  }
+};
+/* ================================================== */
+
+// แก้ไขตัวแปร $ และ $$ ไม่ให้ซ้ำกัน
+const $  = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+
+// Contact links
+$$('.link-phone').forEach(a => a.href = 'tel:' + CONFIG.phone);
+$$('.link-wa').forEach(a => a.href = 'https://wa.me/' + CONFIG.whatsapp);
+$$('.link-fb').forEach(a => a.href = CONFIG.facebook);
+$$('.phone-text').forEach(e => e.textContent = CONFIG.phoneDisplay);
+$('#year').textContent = new Date().getFullYear();
+
+/* ---------- ระบบเปลี่ยนภาษา ---------- */
+$$('[data-i18n]').forEach(el => { const k = el.dataset.i18n; if (!(k in I18N.en)) I18N.en[k] = el.innerHTML.trim(); });
+$$('[data-i18n-ph]').forEach(el => { const k = el.dataset.i18nPh; if (!(k in I18N.en)) I18N.en[k] = el.placeholder; });
+
+let currentLang = 'en';
+function setLang(lang){
+  if (!I18N[lang]) lang = 'en';
+  currentLang = lang;
+  const d = I18N[lang], en = I18N.en;
+  document.documentElement.lang = lang;
+  $$('[data-i18n]').forEach(el => {
+    let t = d[el.dataset.i18n] ?? en[el.dataset.i18n];
+    if (t == null) return;
+    if (el.dataset.n) t = t.replace('{n}', el.dataset.n);
+    el.innerHTML = t;
+  });
+  $$('[data-i18n-ph]').forEach(el => { el.placeholder = d[el.dataset.i18nPh] ?? en[el.dataset.i18nPh]; });
+  $('#langCur').textContent = lang.toUpperCase();
+  $$('#langList button').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  try { localStorage.setItem('pj_lang', lang); } catch(e){}
+}
+
+// สร้างรายการภาษา
+const langBox = $('#lang'), langList = $('#langList');
+Object.entries(LANGS).forEach(([code, name]) => {
+  const li = document.createElement('li');
+  li.innerHTML = `<button data-lang="${code}"><span>${name}</span><small>${code.toUpperCase()}</small></button>`;
+  li.querySelector('button').onclick = () => { setLang(code); langBox.classList.remove('open'); };
+  langList.appendChild(li);
+});
+$('#langBtn').onclick = e => { e.stopPropagation(); langBox.classList.toggle('open'); };
+document.addEventListener('click', e => { if (!langBox.contains(e.target)) langBox.classList.remove('open'); });
+
+// เลือกภาษาเริ่มต้น: ที่เคยเลือก > ภาษาของเครื่อง > อังกฤษ
+let saved = null; try { saved = localStorage.getItem('pj_lang'); } catch(e){}
+const browser = (navigator.language || 'en').slice(0,2).toLowerCase();
+setLang(saved || (LANGS[browser] ? browser : 'en'));
+
+/* ---------- Navbar ---------- */
+window.addEventListener('scroll', () => $('#header').classList.toggle('scrolled', scrollY > 50));
+const menu = $('#menu'), burger = $('#burger');
+burger.onclick = () => {
+  menu.classList.toggle('open');
+  burger.innerHTML = menu.classList.contains('open') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+};
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  menu.classList.remove('open'); burger.innerHTML = '<i class="fas fa-bars"></i>';
+}));
+
+/* ---------- Reveal on scroll ---------- */
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); }
+  }), { threshold: 0, rootMargin: '0px 0px -60px 0px' });
+  $$('.reveal').forEach(el => io.observe(el));
+  $$('.hero .reveal').forEach(el => el.classList.add('show'));
+} else {
+  $$('.reveal').forEach(el => el.classList.add('show'));
+}
+
+/* ---------- Fleet images + Lightbox ---------- */
+const lb = $('#lb'), lbImg = $('#lbImg');
+$$('.car-media').forEach(m => {
+  const src = m.querySelector('img').getAttribute('src');
+  m.querySelector('.blur').style.backgroundImage = `url('${src}')`;
+  m.onclick = () => { lbImg.src = src; lb.classList.add('on'); };
+});
+lb.onclick = () => lb.classList.remove('on');
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { lb.classList.remove('on'); langBox.classList.remove('open'); } });
+
+function selectCar(type){ $('#vehicle').value = type; }
+
+/* ---------- WhatsApp ---------- */
+const sendWA = msg => window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg), '_blank');
+
+$('#quickForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const v = document.querySelector('input[name="qv"]:checked').value;
+  sendWA(`Hello P&J Phuket Transport, I'd like a price quote.
+Vehicle: ${v}
+From: ${$('#qFrom').value}
+To: ${$('#qTo').value}
+Language: ${LANGS[currentLang]}`);
+});
+
+$('#date').min = new Date().toISOString().split('T')[0];
+$('#bookingForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value;
+  sendWA(`*NEW BOOKING - P&J PHUKET TRANSPORT*
+Name: ${v('name')}
+Vehicle: ${v('vehicle')}
+Service: ${v('service')}
+Passengers: ${v('pax')}
+From: ${v('from')}
+To: ${v('to')}
+Date: ${v('date')}
+Time: ${v('time')}
+Note: ${v('note') || '-'}
+Language: ${LANGS[currentLang]}`);
+});
+</script>
+</body>
+</html>
